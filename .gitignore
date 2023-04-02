@@ -1,0 +1,30 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+target
+*.class
+Debug
+*.sln
+*.suo
+*.ncb
+*.vcproj*
+Release
+*.vsprops
+*.aps
+*.rc
+.project
+.classpath
+.pydevproject
+*.jar
+*.pyc

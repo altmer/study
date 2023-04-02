@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>/ascii/</title>
+		<link rel="stylesheet" href="/css/blog.css" type="text/css" media="screen" title="blog_style" charset="utf-8"/>
+	</head>
+	<body>
+		{% if logged %}
+		<a href="{{edit_page}}">Edit</a>
+		<hr />
+		<a href="{{history_link}}">History</a>
+		<hr />
+		<a href="/wiki/logout">Logout</a>
+		<hr />
+		{% else %}
+		<a href="/wiki/login">Login</a>
+		<hr />
+		<a href="/wiki/signup">Signup</a>
+		<hr />
+		{% endif %}
+		<div>
+		{{content}}
+		</div>
+	</body>
+</html>

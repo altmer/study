@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>/ascii/</title>
+		<link rel="stylesheet" href="/css/blog.css" type="text/css" media="screen" title="blog_style" charset="utf-8"/>
+	</head>
+	<body>
+		<h1>Blog</h1>
+		{% for post in posts %}
+			<div class="post">
+				<div class="post-title">{{post.subject}}</div>
+				<hr />
+				<pre class="post-body">{{post.content}}</pre>
+			</div>
+		{% endfor %}
+		<hr />
+		Queried {{posts_generated}} seconds ago		
+	</body>
+</html>
